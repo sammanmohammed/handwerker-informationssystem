@@ -1,0 +1,43 @@
+/* ================================
+   Allgemeine Schrift
+================================ */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ================================
+   Überschriften (Titel)
+================================ */
+.title-label {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+/* ================================
+   Labels
+================================ */
+.standard-label {
+    -fx-font-size: 14px;
+}
+
+/* ================================
+   Textfelder
+================================ */
+.standard-textfield {
+    -fx-font-size: 14px;
+    -fx-padding: 6px;
+}
+
+/* ================================
+   Buttons (einheitlich)
+================================ */
+.standard-button {
+    -fx-min-width: 180px;
+    -fx-min-height: 35px;
+
+    -fx-font-size: 14px;
+    -fx-padding: 6px 10px;
+
+    /* wichtig, damit Text IMMER sichtbar bleibt */
+    -fx-text-fill: black;  
+}
