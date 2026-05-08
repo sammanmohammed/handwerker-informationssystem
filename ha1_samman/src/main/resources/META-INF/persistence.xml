@@ -6,34 +6,19 @@
 	<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 	
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
-		
 		<properties>
-			<!--		
-			<property name="jakarta.persistence.jdbc.url" value="jdbc:h2:~/Applications/h2-data/oop3_aufgabe6.3"/>
-			<property name="jakarta.persistence.jdbc.user" value="sa"/>
-			<property name="jakarta.persistence.jdbc.password" value=""/>
-			<property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver"/>
-			-->
-			<property name="jakarta.persistence.jdbc.url" value="jdbc:oracle:thin:@oracle.zemit.wi.hs-osnabrueck.de:1521:ORCLCDB"/>
-			<property name="jakarta.persistence.jdbc.user" value="STUD19"/>
-			<property name="jakarta.persistence.jdbc.password" value="Weltmeister2014"/>
-			<property name="jakarta.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
-			<property name="eclipselink.target-database" value = "org.eclipse.persistence.platform.database.OraclePlatform"/>
-			
-			<!--  logging  -->
-			<property name="eclilpselink.weaving" value = "static"/>
-			<!--<property name="eclipselink.logging.level" value = "FINE"/>-->
-			<property name="eclipselink.level.sql" value = "FINE"/>
-			<property name="eclipselink.logging.parameters" value = "true"/>
-			
-			<!-- 
-            <property name="jakarta.persistence.schema-generation.database.action" value="create"/>
-            <property name="jakarta.persistence.schema-generation.scripts.action" value="create"/> 
-        	-->
-            <!-- <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/> -->
-			<!-- <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>  -->
-                
+    <property name="jakarta.persistence.jdbc.url" value="jdbc:oracle:thin:@oracle.zemit.wi.hs-osnabrueck.de:1521:ORCLCDB"/>
+    <property name="jakarta.persistence.jdbc.user" value="VS2026_20"/>
+    <property name="jakarta.persistence.jdbc.password" value="Weltmeister2014"/>
+    <property name="jakarta.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
 
-		</properties>
+    <property name="eclipselink.target-database" value="org.eclipse.persistence.platform.database.OraclePlatform"/>
+
+    <property name="eclipselink.weaving" value="static"/>
+    <property name="eclipselink.logging.level.sql" value="FINE"/>
+    <property name="eclipselink.logging.parameters" value="true"/>
+
+    <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>
+</properties>
 	</persistence-unit>
 </persistence>

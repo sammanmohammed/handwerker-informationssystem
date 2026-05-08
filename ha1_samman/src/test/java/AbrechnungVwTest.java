@@ -2,6 +2,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.beans.Transient;
+
 import org.junit.jupiter.api.Test;
 
 import de.opp3.samman.awk.model.Kunde;
@@ -44,6 +46,7 @@ public class AbrechnungVwTest {
         assertEquals(120.0, summe,
                 "Summe muss Stunden * Stundensatz entsprechen");
     }
+    
 
     @Test
     void abgerechneterAuftragWirdNichtMehrAlsAbzurechnendGeladen() {
