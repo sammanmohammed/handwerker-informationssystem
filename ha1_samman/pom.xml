@@ -19,6 +19,7 @@
         <jakarta-persistence>3.1.0</jakarta-persistence>
         <javafx.version>21.0.1</javafx.version>
         <main.class>de.opp3.samman.Main</main.class>
+        <sonar.organization>sammanmohammed</sonar.organization>
     </properties>
 
     <dependencies>
